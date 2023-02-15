@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { Component } from "react";
 
-function LeftComp(props) {
-  return (
-    <>
-      <button className={props.class}>{props.value}</button>
-    </>
-  );
+class LeftComp extends Component {
+  // constructor(props){
+  //   super(props)
+  // }
+  render() {
+    return (
+      <>
+        <div className="left_side">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1200px-W3Schools_logo.svg.png"
+            alt="logo"
+            className="image"
+          />
+          <button className="tutorial left_btn">Tutorials</button>
+          <button className="tutorial left_btn">References</button>
+          <button className="tutorial left_btn">Exercises</button>
+          <button className="tutorial left_btn">Sign Up</button>
+        </div>
+      </>
+    );
+  }
 }
 
-export default LeftComp
+export default LeftComp;
