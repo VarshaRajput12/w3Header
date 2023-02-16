@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 class RightComp extends Component {
-  constructor(props) {
-    super(props);
-  }
-  clickHandler = () => {};
+  // constructor(props) {
+  //   super(props);
+  //   console.log(props.handleLogin)
+  // }
   render() {
     return (
       <>
@@ -15,7 +15,7 @@ class RightComp extends Component {
           <button className="pro right_btn">Pro</button>
           <button className="certified right_btn">Get Certified</button>
           <button className="Website right_btn">Create Website</button>
-          <button onClick={this.clickHandler} className="log_in right_btn">
+          <button onClick={this.props.handleLogin} className="log_in right_btn">
             Log in
           </button>
         </div>

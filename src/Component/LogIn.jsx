@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class Form2 extends Component {
   constructor(props) {
     super(props);
@@ -37,6 +36,10 @@ class Form2 extends Component {
       <>
         <div className="outer_container">
           <div className="form_container">
+            <i
+              onClick={this.props.handleLogin}
+              className="fa-solid fa-xmark"
+            ></i>
             <h2>Log in</h2>
             <form onSubmit={this.handleSubmit}>
               <label htmlFor="email">Email</label>

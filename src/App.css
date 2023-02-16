@@ -118,6 +118,7 @@ body{
 .form_container h2 {
   margin-bottom: 1.5rem;
   font-size: 2.2rem;
+  margin-top: 2rem;
 }
 /* .form_container form {
   line-height: 1.6rem;
@@ -152,13 +153,7 @@ body{
 .userEmail{
   margin-top: 3rem;
 }
-
-/* .clickHandler{
-  position: absolute;
-  right:25px;
-  top: 20px;
-  padding: 0.5rem 3rem;
-  background: transparent;
-  border: none;
-  color: transparent;
-} */
+.fa-xmark{
+  float: right;
+  font-size: 1.6rem;
+}

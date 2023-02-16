@@ -3,20 +3,17 @@ import LeftComp from "./LeftComp";
 import RightComp from "./RightComp";
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   console.log(props.handleLogin);
+  // }
 
-  handleClick(){
-    
-  }
   render() {
     return (
       <>
         <header className="container">
           <LeftComp />
-          <RightComp />
+          <RightComp handleLogin={this.props.handleLogin} />
         </header>
       </>
     );
